@@ -18,7 +18,7 @@ void loop() {
     if (client) {
     while (client.connected()) {
       if (client.available()) {
-        Serial.println(client.read());
+        Serial.print(client.read());
       }
     }
     client.stop();
